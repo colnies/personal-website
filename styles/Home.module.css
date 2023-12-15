@@ -5,16 +5,46 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #4099ff;
-  
+  background-color: #52a3ff;
+  background: linear-gradient(to bottom, #52a3ff, #a1cdff);
 }
 
 .intro {
   margin-bottom: 4px;
+  opacity: 0; /* Start with all elements hidden */
+  
+}
+
+/* Keyframes for the animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply animations to each element */
+.animate1 {
+  animation: fadeIn 1s ease 0.5s forwards;
+}
+
+.animate2 {
+  animation: fadeIn 1s ease 1.5s forwards;
+}
+
+.animate3 {
+  animation: fadeIn 1s ease 2.5s forwards;
+}
+
+.animate4 {
+  animation: fadeIn 1s ease 3.5s forwards;
+  
 }
 
 .title a {
-  color: #0070f3;
+  
   text-decoration: none;
 }
 
@@ -24,6 +54,16 @@
   text-decoration: underline;
 }
 
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  color:#eaeaea;
+}
+
 .title {
   margin: 0 0 1rem;
   line-height: 1.15;
@@ -31,8 +71,8 @@
   color:#eaeaea;
   font-weight: 100;
   position: relative;
-  right: 180px;
-  bottom: 100px;
+  right: 100px;
+  bottom: 60px;
 }
 
 .title {
@@ -49,9 +89,20 @@
   font-size: 1.5rem;
 }
 
+.description {
+  align-self: flex-start; /* Move this item to the top of the container */
+  margin-top: 6.5rem;
+  font-size: 1.1rem;
+  color:#eaeaea;
+  
+  flex: 1; /* Take up remaining space */
+}
+
+
 .image {
   transform: rotate(20deg);
-  margin-left: 250px;
+  margin-left: 14rem;
+  margin-top:5rem;
 }
 
 .grid {
@@ -114,4 +165,37 @@
     height:20%;
     margin-left:0px;
   }
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  margin-left: 0.5rem;
+}
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.iframe {
+  width:auto;
+  height: 450px;
+  
+
+}
+
+.rounded {
+  border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+  margin-right: 12rem;
+  margin-top: 3rem;
+  align-self: flex-start; /* Move this item to the top of the container */
 }

@@ -4,11 +4,15 @@ import styles from '../../styles/Nav.module.css';
 
 export const NavigationBar = () => {
     return (
-        <div>
-            <Link href='/about' className={styles.nav}>About</Link>
-            <Link href='/resume' className={styles.nav}>Resume</Link>
-            <Link href='/personal' className={styles.nav}>Personal</Link>
-        </div>
+        <div className={styles.navbar}>
 
+            <li  className={styles.nav}><a href='https://www.linkedin.com/in/colin-nies-564847120/'> LinkedIn</a></li>
+            <li  className={styles.nav}><a href='/resume'>Resume</a></li>
+            <li  className={styles.nav}><a href='/personal'>Personal</a></li>
+            <li  className={styles.nav}><a href='/about'>About</a></li>
+            <li href='/' className={styles.nav}><a href='/'>Home /</a></li>
+
+        </div>
+        
     );
 }
