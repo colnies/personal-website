@@ -26,8 +26,6 @@ export default function About() {
         <br/>
         I was a lead front-end engineer tasked with re-imagining their user experience.
         <br/>
-        I also have certifications in Google Analytics, Shopify and Product Management.
-        <br/>
         I plan on getting my Masters in Product Design.
       </main>
       <footer>

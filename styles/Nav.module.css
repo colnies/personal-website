@@ -1,12 +1,15 @@
-.nav {
-    margin: 0 0 0 2.5rem;
+.nav a {
+    margin: 0 0 0 2rem;
+    padding: 1rem;
     flex-basis: 45%;
     list-style-type: none;
     line-height: 3rem;
     color:rgb(253, 253, 253);
     text-decoration: none;
-    
-    float:right;
+    font-weight: 100;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Add a smooth transition effect for the border and background color */
+    border-radius: 8px; /* Add rounded corners */
     font-family:
             -apple-system,
             BlinkMacSystemFont,
@@ -20,20 +23,25 @@
             Helvetica Neue,
             sans-serif;
 }
-.nav:hover,
-.nav:focus,
-.nav:active {
-  color: #0051ff;
-  border-color: #0070f3;
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+  
+  
+  background-color: #4098fc;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* This will distribute the items evenly */
+  padding: 0; /* Remove default padding */
 }
 
 
 /* Fixed navigation bar styles */
 .navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 98%;
+  
   
   padding: 10px;
  
