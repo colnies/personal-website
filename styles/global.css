@@ -36,10 +36,11 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color:#eaeaea;
   font-size: 17px;
+  padding-left: 6rem;
 }
 
 footer {

@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 export default function Personal() {
   return (
     <div className={styles.container}>
-      <NavigationBar />
+      <NavigationBar selected='personal'/>
       <Head>
         <title>Personal</title>
         <link rel="icon" href="/favicon.ico" />

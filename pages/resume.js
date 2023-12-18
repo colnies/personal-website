@@ -3,7 +3,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import { NavigationBar } from '../components/NavigationBar';
 import styles from '../styles/Home.module.css';
 
-export default function Home() {
+export default function Resume() {
   const [numPages, setNumPages] = useState(null);
   // Set the worker URL for PDF rendering (adjust the path as needed)
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -11,7 +11,7 @@ export default function Home() {
   return (
 
     <div className={styles.container}>
-      <NavigationBar />
+      <NavigationBar selected='resume'/>
       <main>
         
         <Document

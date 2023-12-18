@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 export default function About() {
   return (
     <div className={styles.container}>
-      <NavigationBar />
+      <NavigationBar selected='about'/>
       <Head>
         <title>About</title>
         <link rel="icon" href="/favicon.ico" />

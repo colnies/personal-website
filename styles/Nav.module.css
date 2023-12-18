@@ -31,6 +31,35 @@
   background-color: #4098fc;
 }
 
+/* Style for the active page */
+.active a {
+  margin: 0 0 0 2rem;
+    padding: 1rem;
+    flex-basis: 45%;
+    list-style-type: none;
+    line-height: 3rem;
+    color:rgb(253, 253, 253);
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Add a smooth transition effect for the border and background color */
+    border-radius: 8px; /* Add rounded corners */
+    font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            Segoe UI,
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            Fira Sans,
+            Droid Sans,
+            Helvetica Neue,
+            sans-serif;
+  background-color: #4098fc;; /* Set the background color for the active page */
+
+}
+
 .navList {
   list-style: none;
   display: flex;
