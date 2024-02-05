@@ -12,7 +12,7 @@ export default function Resume() {
 
     <div className={styles.container}>
       <NavigationBar selected='resume'/>
-      <main>
+      <div className={styles.main}>
         
         <Document
                 file={'Resume.pdf'}
@@ -28,7 +28,7 @@ export default function Resume() {
                             renderAnnotationLayer={false}
                         />)}
             </Document>
-      </main>
+      </div>
       <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

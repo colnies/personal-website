@@ -13,7 +13,7 @@ export default function Personal() {
       </Head>
       <div className={styles.main}>
         
-        <Image src='/headshot_1.jpg' width='200' height='200' className={styles.rounded}></Image>
+        <Image src='/elSal.jpg' width='300' height='300' className={styles.rounded}></Image>
         
         <div className={styles.description}>
           In my free time I enjoy being at the beach, surfing, playing soccer and being with my dog. 
