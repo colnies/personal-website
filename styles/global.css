@@ -77,3 +77,10 @@ code {
     Courier New,
     monospace;
 }
+@media (max-width: 600px) {
+  main {
+    padding: 0rem 0;
+    padding-left: 6rem;
+  }
+
+}

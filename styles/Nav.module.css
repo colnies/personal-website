@@ -79,7 +79,26 @@
 }
 
 @media (max-width: 600px) {
-  .nav {
+  .nav a{
+   
     margin: 0 0 0 1rem;
+    padding: 8px;
+    font-size: 16px;
   }
+  .active a{
+    margin: 0 0 0 1rem;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .navList {
+    display: flex;
+    flex-direction: row; /* Ensure links are arranged horizontally for smaller screens */
+    justify-content: center; /* Center-align the links */
+    text-align: center; /* Center-align the links */
+    flex-wrap: wrap; /* Allow flex items to wrap onto the next line */
+  }
+  .navbar {
+    padding: 5px;
+  }
+  
 }

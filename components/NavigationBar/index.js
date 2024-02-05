@@ -7,7 +7,7 @@ export const NavigationBar = ({selected}) => {
     return (
         <div className={styles.navbar}>
             <ul className={styles.navList}>
-                <li  className={selected === 'home' ? styles.active : styles.nav}><a href='/'>Home/</a></li>
+                <li  className={selected === 'home' ? styles.active : styles.nav}><a href='/'>Home /</a></li>
                 <li  className={selected === 'about' ? styles.active : styles.nav}><a href='/about'>About</a></li>
                 <li  className={selected === 'personal' ? styles.active : styles.nav}><a href='/personal'>Personal</a></li>
                 <li  className={selected === 'resume' ? styles.active : styles.nav}><a href='/resume'>Resume</a></li>

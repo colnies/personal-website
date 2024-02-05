@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0 .5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +55,7 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 3rem 0;
   flex: 1;
   display: flex;
   
@@ -91,7 +91,7 @@
 
 .description {
   align-self: flex-start; /* Move this item to the top of the container */
-  margin-top: 6.5rem;
+  margin-top: 3rem;
   font-size: 1.1rem;
   color:#eaeaea;
   
@@ -161,8 +161,9 @@
     bottom: 0px;
   }
   .image {
-    width:80%;
-    height:20%;
+    width:90%;
+    height:30%;
+    margin-top: 2rem;
     margin-left:0px;
   }
 }
@@ -195,7 +196,25 @@
 
 .rounded {
   border-radius: 10px; /* Adjust the value to control the roundness of the corners */
-  margin-right: 12rem;
+  margin-right: 10rem;
   margin-top: 3rem;
   align-self: flex-start; /* Move this item to the top of the container */
+}
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    padding-top: 0rem;
+  }
+  .description {
+    font-size: .95rem;
+    margin-top: 1rem;
+    margin-left:1rem;
+  }
+  .rounded {
+    margin-top: 0rem;
+    margin-right: 1rem;
+    align-self: center; /* Center the item vertically within the flex container */
+  }
+
 }
