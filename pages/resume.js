@@ -21,7 +21,6 @@ export default function Resume() {
             >
 
                         <Page
-                           styles={styles.pdf}
                             key={1}
                             pageNumber={1}
                             renderTextLayer={false}
