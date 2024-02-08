@@ -12,23 +12,24 @@ export default function Resume() {
 
     <div className={styles.container}>
       <NavigationBar selected='resume'/>
-      <div className={styles.main}>
+      
         
         <Document
                 file={'Resume.pdf'}
                 onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+                className={styles.pdf}
             >
-                {Array.apply(null, Array(numPages))
-                    .map((x, i) => i + 1)
-                    .map(page =>
+
                         <Page
-                            key={page}
-                            pageNumber={page}
+                           styles={styles.pdf}
+                            key={1}
+                            pageNumber={1}
                             renderTextLayer={false}
                             renderAnnotationLayer={false}
-                        />)}
+                        />
+
             </Document>
-      </div>
+      
       <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
